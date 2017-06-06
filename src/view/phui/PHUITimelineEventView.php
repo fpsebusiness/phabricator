@@ -157,6 +157,10 @@ final class PHUITimelineEventView extends AphrontView {
     return $this;
   }
 
+  public function getTitle() {
+    return $this->title;
+  }
+
   public function addClass($class) {
     $this->classes[] = $class;
     return $this;
