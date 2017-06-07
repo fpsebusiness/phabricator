@@ -521,7 +521,6 @@ abstract class PhabricatorController extends AphrontController {
       ->withObjectPHIDs(array($object->getPHID()))
       ->needComments(true)
       ->executeWithCursorPager($pager);
-    $xactions = array_reverse($xactions);
 
     $comments = $actions = [];
 
@@ -533,8 +532,6 @@ abstract class PhabricatorController extends AphrontController {
          $actions[] = $xaction;
       }
     }
-    $comments = array_reverse($comments);
-    $actions = array_reverse($actions);
     $xactions = array_merge($comments, $actions);
 
     if ($engine) {
