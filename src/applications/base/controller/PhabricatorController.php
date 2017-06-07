@@ -533,7 +533,8 @@ abstract class PhabricatorController extends AphrontController {
          $actions[] = $xaction;
       }
     }
-
+    $comments = array_reverse($comments);
+    $actions = array_reverse($actions);
     $xactions = array_merge($comments, $actions);
 
     if ($engine) {
