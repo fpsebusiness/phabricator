@@ -523,6 +523,19 @@ abstract class PhabricatorController extends AphrontController {
       ->executeWithCursorPager($pager);
     $xactions = array_reverse($xactions);
 
+    $comments = $actions = [];
+
+    foreach ($xactions as $xaction) {
+      $title = $xaction->getTitle();
+      if (strpos($title, 'added a comment') !== false) {
+         $comments[] = $xaction;
+      } else {
+         $actions[] = $xaction;
+      }
+    }
+
+    $xactions = array_merge($comments, $actions);
+
     if ($engine) {
       foreach ($xactions as $xaction) {
         if ($xaction->getComment()) {
