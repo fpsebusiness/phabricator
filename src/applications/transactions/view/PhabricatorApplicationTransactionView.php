@@ -201,7 +201,7 @@ class PhabricatorApplicationTransactionView extends AphrontView {
       throw new PhutilInvalidStateException('setObjectPHID');
     }
 
-    $view = $this->buildPHUITimelineView();
+    $view = $this->buildPHUITimelineView(false);
 
     if ($this->getShowEditActions()) {
       Javelin::initBehavior('phabricator-transaction-list');

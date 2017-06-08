@@ -190,8 +190,8 @@ final class ManiphestTaskDetailController extends ManiphestController {
       ->setMainColumn(
         array(
           $tab_view,
-          $timeline,
           $comment_view,
+          $timeline,
         ))
       ->addPropertySection(pht('Description'), $description)
       ->addPropertySection(pht('Details'), $details);
