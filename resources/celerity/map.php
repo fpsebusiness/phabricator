@@ -9,11 +9,11 @@ return array(
   'names' => array(
     'conpherence.pkg.css' => 'ff161f2d',
     'conpherence.pkg.js' => 'b5b51108',
-    'core.pkg.css' => '7e4901ea',
+    'core.pkg.css' => 'ab24402f',
     'core.pkg.js' => '1475bd91',
     'darkconsole.pkg.js' => '1f9a31bc',
     'differential.pkg.css' => '1ccbf3a9',
-    'differential.pkg.js' => '889ab0ab',
+    'differential.pkg.js' => 'b7504037',
     'diffusion.pkg.css' => 'b93d9b8c',
     'diffusion.pkg.js' => '6134c5a1',
     'favicon.ico' => '30672e08',
@@ -25,7 +25,7 @@ return array(
     'rsrc/audio/basic/tap.mp3' => 'fc2fd796',
     'rsrc/audio/basic/ting.mp3' => '17660001',
     'rsrc/css/aphront/aphront-bars.css' => '231ac33c',
-    'rsrc/css/aphront/dark-console.css' => '53798a6d',
+    'rsrc/css/aphront/dark-console.css' => 'f7b071f1',
     'rsrc/css/aphront/dialog-view.css' => '685c7e2d',
     'rsrc/css/aphront/list-filter-view.css' => '5d6f0526',
     'rsrc/css/aphront/multi-column.css' => '84cc6640',
@@ -157,7 +157,7 @@ return array(
     'rsrc/css/phui/phui-form-view.css' => '6175808d',
     'rsrc/css/phui/phui-form.css' => 'a5570f70',
     'rsrc/css/phui/phui-head-thing.css' => 'fd311e5f',
-    'rsrc/css/phui/phui-header-view.css' => '73edce66',
+    'rsrc/css/phui/phui-header-view.css' => 'e7de7ee2',
     'rsrc/css/phui/phui-hovercard.css' => 'f0592bcf',
     'rsrc/css/phui/phui-icon-set-selector.css' => '87db8fee',
     'rsrc/css/phui/phui-icon.css' => '4c46b6ba',
@@ -396,8 +396,8 @@ return array(
     'rsrc/js/application/dashboard/behavior-dashboard-query-panel-select.js' => '453c5375',
     'rsrc/js/application/dashboard/behavior-dashboard-tab-panel.js' => 'd4eecc63',
     'rsrc/js/application/diff/DiffChangeset.js' => 'd498bddb',
-    'rsrc/js/application/diff/DiffChangesetList.js' => '0db8cdca',
-    'rsrc/js/application/diff/DiffInline.js' => '1d17130f',
+    'rsrc/js/application/diff/DiffChangesetList.js' => '29bbc02c',
+    'rsrc/js/application/diff/DiffInline.js' => '20553f71',
     'rsrc/js/application/diff/behavior-preview-link.js' => '051c7832',
     'rsrc/js/application/differential/behavior-comment-preview.js' => '51c5ad07',
     'rsrc/js/application/differential/behavior-diff-radios.js' => 'e1ff79b1',
@@ -496,7 +496,7 @@ return array(
     'rsrc/js/core/behavior-lightbox-attachments.js' => '560f41da',
     'rsrc/js/core/behavior-line-linker.js' => '1499a8cb',
     'rsrc/js/core/behavior-more.js' => 'a80d0378',
-    'rsrc/js/core/behavior-object-selector.js' => 'e0ec7f2f',
+    'rsrc/js/core/behavior-object-selector.js' => '77c1f0b0',
     'rsrc/js/core/behavior-oncopy.js' => '2926fff2',
     'rsrc/js/core/behavior-phabricator-nav.js' => '947753e0',
     'rsrc/js/core/behavior-phabricator-remarkup-assist.js' => 'acd29eee',
@@ -537,7 +537,7 @@ return array(
   'symbols' => array(
     'almanac-css' => 'dbb9b3af',
     'aphront-bars' => '231ac33c',
-    'aphront-dark-console-css' => '53798a6d',
+    'aphront-dark-console-css' => 'f7b071f1',
     'aphront-dialog-view-css' => '685c7e2d',
     'aphront-list-filter-view-css' => '5d6f0526',
     'aphront-multi-column-view-css' => '84cc6640',
@@ -658,7 +658,7 @@ return array(
     'javelin-behavior-phabricator-line-linker' => '1499a8cb',
     'javelin-behavior-phabricator-nav' => '947753e0',
     'javelin-behavior-phabricator-notification-example' => '8ce821c5',
-    'javelin-behavior-phabricator-object-selector' => 'e0ec7f2f',
+    'javelin-behavior-phabricator-object-selector' => '77c1f0b0',
     'javelin-behavior-phabricator-oncopy' => '2926fff2',
     'javelin-behavior-phabricator-remarkup-assist' => 'acd29eee',
     'javelin-behavior-phabricator-reveal-content' => '60821bc7',
@@ -775,8 +775,8 @@ return array(
     'phabricator-darkmessage' => 'c48cccdd',
     'phabricator-dashboard-css' => 'fe5b1869',
     'phabricator-diff-changeset' => 'd498bddb',
-    'phabricator-diff-changeset-list' => '0db8cdca',
-    'phabricator-diff-inline' => '1d17130f',
+    'phabricator-diff-changeset-list' => '29bbc02c',
+    'phabricator-diff-inline' => '20553f71',
     'phabricator-drag-and-drop-file-upload' => '58dea2fa',
     'phabricator-draggable-list' => 'bea6e7f4',
     'phabricator-fatal-config-template-css' => '8f18fa41',
@@ -843,7 +843,7 @@ return array(
     'phui-form-css' => 'a5570f70',
     'phui-form-view-css' => '6175808d',
     'phui-head-thing-view-css' => 'fd311e5f',
-    'phui-header-view-css' => '73edce66',
+    'phui-header-view-css' => 'e7de7ee2',
     'phui-hovercard' => '1bd28176',
     'phui-hovercard-view-css' => 'f0592bcf',
     'phui-icon-set-selector-css' => '87db8fee',
@@ -959,10 +959,6 @@ return array(
       'javelin-dom',
       'javelin-router',
     ),
-    '0db8cdca' => array(
-      'javelin-install',
-      'phuix-button-view',
-    ),
     '0f764c35' => array(
       'javelin-install',
       'javelin-util',
@@ -1020,9 +1016,6 @@ return array(
       'javelin-request',
       'javelin-uri',
     ),
-    '1d17130f' => array(
-      'javelin-dom',
-    ),
     '1e911d0f' => array(
       'javelin-stratcom',
       'javelin-request',
@@ -1044,6 +1037,9 @@ return array(
     ),
     '1fe2510c' => array(
       'javelin-install',
+      'javelin-dom',
+    ),
+    '20553f71' => array(
       'javelin-dom',
     ),
     '2290aeef' => array(
@@ -1070,6 +1066,10 @@ return array(
     '29274e2b' => array(
       'javelin-install',
       'javelin-util',
+    ),
+    '29bbc02c' => array(
+      'javelin-install',
+      'phuix-button-view',
     ),
     '2ae077e1' => array(
       'javelin-behavior',
@@ -1455,6 +1455,12 @@ return array(
     '76f4ebed' => array(
       'javelin-install',
       'javelin-reactor',
+      'javelin-util',
+    ),
+    '77c1f0b0' => array(
+      'javelin-behavior',
+      'javelin-dom',
+      'javelin-request',
       'javelin-util',
     ),
     '782ab6e7' => array(
@@ -2031,12 +2037,6 @@ return array(
       'javelin-typeahead',
       'javelin-typeahead-ondemand-source',
       'javelin-dom',
-    ),
-    'e0ec7f2f' => array(
-      'javelin-behavior',
-      'javelin-dom',
-      'javelin-request',
-      'javelin-util',
     ),
     'e1d25dfb' => array(
       'javelin-behavior',
