@@ -33,40 +33,9 @@ class PhabricatorGanttApplication extends PhabricatorApplication {
 
   public function getRoutes() {
     return array(
-      '/J(?P<id>[1-9]\d*)' => 'PhamePostViewController',
-      '/phame/' => array(
+      '/gantt/' => array(
         '' => 'GanttController',
-
-        // NOTE: The live routes include an initial "/", so leave it off
-        // this route.
-        '(?P<live>live)/(?P<blogID>\d+)' => $this->getLiveRoutes(),
-        'post/' => array(
-          '(?:query/(?P<queryKey>[^/]+)/)?' => 'PhamePostListController',
-          'blogger/(?P<bloggername>[\w\.-_]+)/' => 'PhamePostListController',
-          $this->getEditRoutePattern('edit/')
-            => 'PhamePostEditController',
-          'history/(?P<id>\d+)/' => 'PhamePostHistoryController',
-          'view/(?P<id>\d+)/(?:(?P<slug>[^/]+)/)?' => 'PhamePostViewController',
-          '(?P<action>publish|unpublish)/(?P<id>\d+)/'
-            => 'PhamePostPublishController',
-          'preview/(?P<id>\d+)/' => 'PhamePostPreviewController',
-          'preview/' => 'PhabricatorMarkupPreviewController',
-          'move/(?P<id>\d+)/' => 'PhamePostMoveController',
-          'archive/(?P<id>\d+)/' => 'PhamePostArchiveController',
-          'header/(?P<id>[1-9]\d*)/' => 'PhamePostHeaderPictureController',
-        ),
-        'blog/' => array(
-          '(?:query/(?P<queryKey>[^/]+)/)?' => 'PhameBlogListController',
-          'archive/(?P<id>[^/]+)/' => 'PhameBlogArchiveController',
-          $this->getEditRoutePattern('edit/')
-            => 'PhameBlogEditController',
-          'view/(?P<blogID>\d+)/' => 'PhameBlogViewController',
-          'manage/(?P<id>[^/]+)/' => 'PhameBlogManageController',
-          'feed/(?P<id>[^/]+)/' => 'PhameBlogFeedController',
-          'picture/(?P<id>[1-9]\d*)/' => 'PhameBlogProfilePictureController',
-          'header/(?P<id>[1-9]\d*)/' => 'PhameBlogHeaderPictureController',
-        ),
-      ) + $this->getResourceSubroutes(),
+      ),
     );
   }
   /*
