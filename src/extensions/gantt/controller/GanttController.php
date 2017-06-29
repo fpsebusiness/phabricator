@@ -39,7 +39,7 @@ class GanttController extends PhabricatorController {
     return $title;
   }
 
-  protected function getContent()
+  protected function getCrumbs()
   {
     $crumbs = $this->buildApplicationCrumbs();
     $crumbs->setBorder(true);
